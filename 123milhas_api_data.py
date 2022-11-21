@@ -68,7 +68,7 @@ def collect_data():
         city_count +=1
         print(f'{city_count}/{len(voo_promo_arrival_city)} finished, {city}')
 
-    with open(f'C:/Users/Nikolyai/Desktop/{today_date}_voo_promo_arrival_city_departure_city.json', 'w', encoding="utf-8") as file:
+    with open('voo_promo_arrival_city_departure_city.json', 'w', encoding="utf-8") as file:
         json.dump(voo_promo_arrival_city_departure_city, file, indent=4, ensure_ascii=False)
 
 
