@@ -74,3 +74,13 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
+
+    
+# for google drive purpose only
+
+from google.colab import drive
+drive.mount('/content/gdrive')
+
+with open('/content/gdrive/My Drive/voo_promo_arrival_city_departure_city.json', 'w') as f:
+  f.write('content')
