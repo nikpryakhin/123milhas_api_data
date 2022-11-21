@@ -6,6 +6,7 @@ from datetime import date
 def collect_data():
     count = 0
     page_number = 1
+    city_count = 0
     today_date = str(date.today())
 
     voo_promo_arrival_city = []
@@ -64,7 +65,10 @@ def collect_data():
                 }
             )
 
-    with open('C:/Users/Nikolyai/Desktop/voo_promo_arrival_city_departure_city.json', 'w', encoding="utf-8") as file:
+        city_count +=1
+        print(f'{city_count}/{len(voo_promo_arrival_city)} finished, {city}')
+
+    with open(f'C:/Users/Nikolyai/Desktop/{today_date}_voo_promo_arrival_city_departure_city.json', 'w', encoding="utf-8") as file:
         json.dump(voo_promo_arrival_city_departure_city, file, indent=4, ensure_ascii=False)
 
 
