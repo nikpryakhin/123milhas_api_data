@@ -82,5 +82,9 @@ if __name__ == '__main__':
 from google.colab import drive
 drive.mount('/content/gdrive')
 
-with open('/content/gdrive/My Drive/voo_promo_arrival_city_departure_city.json', 'w') as f:
+with open(f'/content/gdrive/My Drive/{date.today()}voo_promo_arrival_city_departure_city.json', 'w') as f:
   f.write('content')
+
+
+# JSON converter to xml 
+# https://tableconvert.com/json-to-excel
