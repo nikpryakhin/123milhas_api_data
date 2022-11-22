@@ -92,3 +92,13 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+
+# for google drive purpose only (google colab)
+
+# from google.colab import drive
+# drive.mount('/content/gdrive')
+
+# with open(f'/content/gdrive/My Drive/{date.today()}_voo_promo_data.json', 'w') as f:
+#   f.write('content')
